@@ -37,6 +37,14 @@ namespace MOBA
                 {
                     s.target = target;  //assign target
                 }
+
+                // PathFollowing
+                PathFollowing p = agent.GetComponent<PathFollowing>();
+                // is PathFollowing attached to agent?
+                if (p != null)
+                {
+                    p.target = target; //assign target to PathFollowing component on agent
+                }
             }
         }
 
